@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Recovered from the deployed build — see ../recovered/README.md.
+   Order matters: tokens and palette first, then the component layer that consumes them. */
+@import "./styles/theme.css";
+@import "./styles/palette.css";
+@import "./styles/components.css";
+
+/* Our one deliberate departure from the recovered palette. */
+@import "./styles/brand.css";

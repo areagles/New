@@ -1,0 +1,28 @@
+# Added 2026-08-23, tightened 2026-08-26.
+# Every request the app makes enters through api/index.php (see ../.htaccess:
+# RewriteRule ^api/v1/?(.*)$ api/index.php?route=$1). Everything else in this
+# directory is either a library that index.php require()s, or a CLI maintenance
+# script — none of it should be reachable over HTTP.
+#
+# The deny is on everything rather than on *.php, which is what it always claimed
+# to be. A rule matching \.php$ let `bootstrap-jobs.php.pre-upload-fix` through and
+# served 240 KB of source as plain text: any editor backup, .bak, .orig, .save or
+# hand-made copy would have done the same. Denying the directory and re-allowing one
+# file is the version of this that cannot be walked around by a suffix.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>
+
+<Files "index.php">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+  </IfModule>
+</Files>

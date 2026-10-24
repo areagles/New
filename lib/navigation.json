@@ -1,0 +1,352 @@
+{
+  "sections": [
+    {
+      "key": "nav.section.home",
+      "labelAr": "المتابعة العامة",
+      "labelEn": "Overview",
+      "items": [
+        {
+          "href": "/dashboard",
+          "key": "nav.dashboard",
+          "icon": "01",
+          "labelAr": "لوحة المعلومات",
+          "labelEn": "Dashboard"
+        },
+        {
+          "href": "/morning",
+          "key": "nav.morning",
+          "icon": "02",
+          "labelAr": "إحاطة المدير",
+          "labelEn": "Manager briefing"
+        },
+        {
+          "href": "/owner",
+          "key": "nav.owner",
+          "icon": "03",
+          "labelAr": "لوحة المالك",
+          "labelEn": "Owner board"
+        },
+        {
+          "href": "/archive",
+          "key": "nav.archive",
+          "icon": "04",
+          "labelAr": "أرشيف العمليات",
+          "labelEn": "Operations archive"
+        },
+        {
+          "href": "/approvals",
+          "key": "nav.approvals",
+          "icon": "05",
+          "labelAr": "سجل الموافقات",
+          "labelEn": "Approvals register"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.operations",
+      "labelAr": "العمليات والإنتاج",
+      "labelEn": "Operations & production",
+      "items": [
+        {
+          "href": "/jobs",
+          "key": "nav.jobs",
+          "icon": "01",
+          "labelAr": "أوامر التشغيل",
+          "labelEn": "Work orders"
+        },
+        {
+          "href": "/rfq-inbox",
+          "key": "nav.rfqInbox",
+          "icon": "02",
+          "labelAr": "طلبات عروض الأسعار",
+          "labelEn": "RFQ inbox"
+        },
+        {
+          "href": "/scheduling",
+          "key": "nav.scheduling",
+          "icon": "03",
+          "labelAr": "جدولة الماكينات",
+          "labelEn": "Machine schedule"
+        },
+        {
+          "href": "/maintenance",
+          "key": "nav.maintenance",
+          "icon": "04",
+          "labelAr": "صيانة الماكينات",
+          "labelEn": "Machine maintenance"
+        },
+        {
+          "href": "/pricing",
+          "key": "nav.pricing",
+          "icon": "05",
+          "labelAr": "التسعير",
+          "labelEn": "Pricing"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.sales",
+      "labelAr": "العملاء والمبيعات",
+      "labelEn": "Customers & sales",
+      "items": [
+        {
+          "href": "/clients",
+          "key": "nav.clients",
+          "icon": "01",
+          "labelAr": "سجل العملاء",
+          "labelEn": "Client registry"
+        },
+        {
+          "href": "/follow-up",
+          "key": "nav.followup",
+          "icon": "02",
+          "labelAr": "متابعة العملاء",
+          "labelEn": "Customer follow-up"
+        },
+        {
+          "href": "/sales",
+          "key": "nav.sales",
+          "icon": "03",
+          "labelAr": "المبيعات",
+          "labelEn": "Sales"
+        },
+        {
+          "href": "/quotes",
+          "key": "nav.quotes",
+          "icon": "04",
+          "labelAr": "عروض الأسعار",
+          "labelEn": "Quotations"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.purchasing",
+      "labelAr": "المشتريات والتوريد",
+      "labelEn": "Procurement",
+      "items": [
+        {
+          "href": "/suppliers",
+          "key": "nav.suppliers",
+          "icon": "01",
+          "labelAr": "سجل الموردين",
+          "labelEn": "Supplier registry"
+        },
+        {
+          "href": "/purchase-orders",
+          "key": "nav.purchaseOrders",
+          "icon": "02",
+          "labelAr": "أوامر الشراء",
+          "labelEn": "Purchase orders"
+        },
+        {
+          "href": "/purchases",
+          "key": "nav.purchases",
+          "icon": "03",
+          "labelAr": "فواتير المشتريات",
+          "labelEn": "Purchase invoices"
+        },
+        {
+          "href": "/eta-pull",
+          "key": "nav.etaPull",
+          "icon": "04",
+          "labelAr": "استيراد ETA",
+          "labelEn": "ETA import"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.finance",
+      "labelAr": "المالية والتحصيل",
+      "labelEn": "Finance & collections",
+      "items": [
+        {
+          "href": "/invoices",
+          "key": "nav.invoices",
+          "icon": "01",
+          "labelAr": "فواتير المبيعات",
+          "labelEn": "Sales invoices"
+        },
+        {
+          "href": "/recurring-invoices",
+          "key": "nav.recurringInvoices",
+          "icon": "02",
+          "labelAr": "الفواتير الدورية",
+          "labelEn": "Recurring invoices"
+        },
+        {
+          "href": "/dunning",
+          "key": "nav.dunning",
+          "icon": "03",
+          "labelAr": "متابعة التحصيل",
+          "labelEn": "Collections follow-up"
+        },
+        {
+          "href": "/receipts",
+          "key": "nav.receipts",
+          "icon": "04",
+          "labelAr": "سندات القبض والصرف",
+          "labelEn": "Receipts & payments"
+        },
+        {
+          "href": "/cheques",
+          "key": "nav.cheques",
+          "icon": "05",
+          "labelAr": "إدارة الشيكات",
+          "labelEn": "Cheque management"
+        },
+        {
+          "href": "/treasury",
+          "key": "nav.treasury",
+          "icon": "06",
+          "labelAr": "الخزينة والنقدية",
+          "labelEn": "Treasury & cash"
+        },
+        {
+          "href": "/bank-reconciliation",
+          "key": "nav.bank",
+          "icon": "07",
+          "labelAr": "المطابقة البنكية",
+          "labelEn": "Bank reconciliation"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.accounting",
+      "labelAr": "المحاسبة والتقارير",
+      "labelEn": "Accounting & reports",
+      "items": [
+        {
+          "href": "/accounting",
+          "key": "nav.accounting",
+          "icon": "01",
+          "labelAr": "دليل الحسابات",
+          "labelEn": "Chart of accounts"
+        },
+        {
+          "href": "/journals",
+          "key": "nav.journals",
+          "icon": "02",
+          "labelAr": "القيود اليومية",
+          "labelEn": "Journal entries"
+        },
+        {
+          "href": "/reports",
+          "key": "nav.reports",
+          "icon": "03",
+          "labelAr": "التقارير المالية",
+          "labelEn": "Financial reports"
+        },
+        {
+          "href": "/assets",
+          "key": "nav.assets",
+          "icon": "04",
+          "labelAr": "الأصول الثابتة",
+          "labelEn": "Fixed assets"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.inventory",
+      "labelAr": "المخزون والمستودعات",
+      "labelEn": "Inventory & warehousing",
+      "items": [
+        {
+          "href": "/inventory",
+          "key": "nav.inventory",
+          "icon": "01",
+          "labelAr": "إدارة المخزون",
+          "labelEn": "Inventory control"
+        },
+        {
+          "href": "/warehouse",
+          "key": "nav.warehouse",
+          "icon": "02",
+          "labelAr": "المستودع",
+          "labelEn": "Warehouse"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.hr",
+      "labelAr": "الموارد البشرية",
+      "labelEn": "Human resources",
+      "items": [
+        {
+          "href": "/hr",
+          "key": "nav.hr",
+          "icon": "01",
+          "labelAr": "الموارد البشرية",
+          "labelEn": "Human resources"
+        },
+        {
+          "href": "/my-leave",
+          "key": "nav.myLeave",
+          "icon": "02",
+          "labelAr": "إجازاتي",
+          "labelEn": "My leave"
+        },
+        {
+          "href": "/my-loans",
+          "key": "nav.myLoans",
+          "icon": "03",
+          "labelAr": "سلفي",
+          "labelEn": "My advances"
+        }
+      ]
+    },
+    {
+      "key": "nav.section.system",
+      "labelAr": "إدارة النظام",
+      "labelEn": "System administration",
+      "items": [
+        {
+          "href": "/users",
+          "key": "nav.users",
+          "icon": "01",
+          "labelAr": "إدارة المستخدمين",
+          "labelEn": "User management"
+        },
+        {
+          "href": "/automation",
+          "key": "nav.automation",
+          "icon": "02",
+          "labelAr": "الأتمتة",
+          "labelEn": "Automation"
+        },
+        {
+          "href": "/settings",
+          "key": "nav.settings",
+          "icon": "03",
+          "labelAr": "إعدادات النظام",
+          "labelEn": "System settings"
+        },
+        {
+          "href": "/profile",
+          "key": "nav.myProfile",
+          "icon": "04",
+          "labelAr": "الملف الشخصي",
+          "labelEn": "Profile"
+        }
+      ]
+    }
+  ],
+  "quickNav": [
+    {
+      "href": "/warehouse",
+      "key": "quickNav.action.warehouse",
+      "icon": "📦",
+      "permHref": "/warehouse",
+      "labelAr": "مسح مخزن",
+      "labelEn": "Warehouse scan"
+    },
+    {
+      "href": "/pricing",
+      "key": "quickNav.action.pricing",
+      "icon": "¤",
+      "permHref": "/pricing",
+      "labelAr": "التسعير",
+      "labelEn": "Pricing"
+    }
+  ],
+  "totalItems": 38
+}

@@ -1,0 +1,79 @@
+/* The "gold night" palette, read off the running system.
+ *
+ * It never appeared in the stylesheet: the old build applied it as inline custom properties
+ * on <html> from JavaScript, which is why an earlier pass through the CSS concluded there was
+ * no dark theme. These are the exact values that system serves, not an interpretation of
+ * them — the stylesheet's own :root still holds the blue that was never actually shown.
+ *
+ * Set as the default rather than behind a picker: it is the identity, not an option.
+ */
+
+:root,
+[data-theme='dark'] {
+  --accent: #e8b13a;
+  --accent-hover: #f0c419;
+  --accent-bright: #e8b13a;
+  --accent-soft: color-mix(in srgb, #e8b13a 14%, #171009);
+  --accent-glow: color-mix(in srgb, #e8b13a 22%, transparent);
+
+  --bg: #0a0704;
+  --bg-soft: color-mix(in srgb, #0a0704 88%, #e8b13a 12%);
+  --surface: #171009;
+  --surface-elevated: #171009;
+
+  --text: #f5ead0;
+  --text-muted: #c9a768;
+
+  --border: color-mix(in srgb, #0a0704 55%, #94a3b8 45%);
+  --border-strong: color-mix(in srgb, #0a0704 40%, #64748b 60%);
+  --shadow-accent: 0 12px 32px color-mix(in srgb, #e8b13a 28%, transparent);
+
+  --gold: #e8b13a;
+  --gold-soft: color-mix(in srgb, #e8b13a 12%, #171009);
+  --gold-border: color-mix(in srgb, #e8b13a 30%, transparent);
+
+  --sidebar-bg: #0a0704;
+  --sidebar-bg-end: #171009;
+  --sidebar-text: #f5ead0;
+  --sidebar-muted: #c9a768;
+  --sidebar-border: rgba(232, 177, 58, 0.16);
+  --sidebar-active: rgba(232, 177, 58, 0.22);
+  --sidebar-icon-active: rgba(232, 177, 58, 0.35);
+  --sidebar-hover-accent: rgba(240, 196, 25, 0.45);
+  --sidebar-tooltip-bg: #120d06;
+  --sidebar-surface: rgba(232, 177, 58, 0.08);
+}
+
+/* The page itself, which the recovered component rules assume is already dark. */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* The drawer trigger belongs to the widths where the sidebar is hidden. 1024px is the
+   breakpoint the recovered stylesheet already uses for .ae-shell-aside, so both switch
+   together rather than leaving a band with neither or both. */
+@media (min-width: 1024px) {
+  .ae-shell-mobile-bar .ae-icon-btn[aria-expanded] {
+    display: none;
+  }
+}
+
+/* Sign-in without the showcase.
+ *
+ * .login-root is a two-column grid (1.05fr .95fr) because the original paired the form with
+ * a marketing panel. With that panel gone the single child lands in one column and sits off
+ * to the side, so the grid collapses to one centred column here. Done as a rule rather than
+ * utility classes, because the component's own `display:grid` wins against them. */
+.login-root {
+  grid-template-columns: 1fr;
+  /* Not place-items:center — that sizes the column to its content and collapsed the 430px
+     panel to 245px. The item stretches; .login-panel-wrap is already a centring flex box. */
+  align-content: center;
+}
+
+@media (min-width: 1024px) {
+  .login-root {
+    grid-template-columns: 1fr;
+  }
+}
